@@ -1,0 +1,38 @@
+.upper-nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:var(--blue-color)
+}
+
+.contact-address{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:var(--blue-color);
+}
+
+.contact-address p{
+    margin-right:1rem;
+    color:var(--background-color);
+    font-weight: 500;
+}
+.social-media{
+    
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .upper-nav{
+        flex-direction:column;
+        align-items:stretch;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .social-media{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    
+}

@@ -1,0 +1,104 @@
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  width: 10rem; 
+}
+
+.menu-toggle {
+  display: none; 
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  margin-right: 1rem; 
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--blue-color);
+  font-size:0.9rem;
+  font-weight:500;
+  text-transform:uppercase;
+  transition: color 0.3s ease;  
+}
+
+
+ul li::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  
+}
+
+ul li:hover::after{
+  width: 100%;
+  content: icon;
+}
+
+ul li a:hover {
+  color: var(--secondary-color);
+}
+
+
+ul.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show menu toggle on small screens */
+  }
+  nav{
+    display:flex;
+    justify-content:space-between;
+  }
+
+  ul {
+    display: none; /* Hide menu by default on small screens */
+    position: absolute;
+    top: 60px; /* Adjust top position as needed */
+    left: 0;
+    background-color: #FFF; /* Menu background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    padding: 1rem;
+    width: 100%; /* Full width */
+  }
+
+  ul li {
+    margin-bottom: 1rem; /* Adjust spacing between menu items */
+  }
+
+  ul.show {
+    display: flex; /* Show menu when active */
+    flex-direction: column;
+  }
+}

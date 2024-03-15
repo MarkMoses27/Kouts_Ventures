@@ -1,0 +1,21 @@
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+ 
+html,body{
+  margin:0;
+  padding:0;
+}
+
+
+
+
+:root{
+  --primary-color:#FFBD59;
+  --secondary-color:#FF3131;
+  --blue-color:#004AAD;
+  --text-color:#000000;
+  --grey-color:#808080;
+  --background-color:#FFFFFF;
+
+}
