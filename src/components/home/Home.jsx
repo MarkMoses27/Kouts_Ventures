@@ -16,9 +16,9 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-img">
-          <img src={HERO_IMAGE} alt="Hero" />
+          <img src={HERO_IMAGE} alt="Hero" className='bg-blend-luminosity' />
         </div>
-      </div>
+      </div> 
     </div>
   );
 }
